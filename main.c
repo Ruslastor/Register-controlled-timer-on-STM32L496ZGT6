@@ -192,10 +192,10 @@ void timer_6_init(){
 
 void my_delay_ms(uint16_t ms)
 {
-	//MyTIM6 -> TIM6_ARR = 1000*ms;
-	while((MyTIM6->TIM6_SR & (1<<0))==0){}
-
-	MyTIM6->TIM6_SR &= ~(1<<0);
+	for(uint8_t i = 0; i < ms; i++){
+		while((MyTIM6->TIM6_SR & (1<<0))==0 && ){}
+		MyTIM6->TIM6_SR &= ~(1<<0);
+	}
 }
 
 
