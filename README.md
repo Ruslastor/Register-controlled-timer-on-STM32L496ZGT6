@@ -1,4 +1,4 @@
-<h>Register controlled timer with STM32L496ZGT6 microcontroller (Chameleon board)</h>
+<h1>Register controlled timer with STM32L496ZGT6 microcontroller (Chameleon board)</h1>
 
 <p>The aim of this small project was to make a timer, that counts from 0 to 9999, with the use of 4 digit 7-segment display, and not using HAL standard library, but configure GPIO and TIM6 timer by hand, using registers.</p>
 <p>The stucture of display is as follows:</p>
@@ -15,13 +15,13 @@
     <th>Seg_G</th>
   </tr>
   <tr>
-    <tb>PG0</tb>
-    <tb>PG1</tb>
-    <tb>PG2</tb>
-    <tb>PG3</tb>
-    <tb>PG4</tb>
-    <tb>PG5</tb>
-    <tb>PG6</tb>
+    <td>PG0</td>
+    <td>PG1</td>
+    <td>PG2</td>
+    <td>PG3</td>
+    <td>PG4</td>
+    <td>PG5</td>
+    <td>PG6</td>
   </tr>
 </table>
 
