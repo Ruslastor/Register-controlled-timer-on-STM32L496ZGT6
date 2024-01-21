@@ -52,6 +52,9 @@
 </table>
 
 <p>Then, with the use of the manual, the memory adresses of GPIO, and TIM6 were found, together with the structure of registers thay have. As soon, as the microcontroller uses 32bit registers, the memory space for each register will be 4 bytes, and thus the unsigned 32 bit integer template will be used (Not int, because we need to be aware of operating system, on which we use the compiler, because somewhere int is 64bit or 96bit or even 128bit)</p>
+
+<a href="https://kameleonboard.org/wp-content/uploads/STM32L496ZGT6-Reference-Manual.pdf">STM32L4x5 and STM32L4x6 memory and periferial devices manual</a>
+
 <table>
   <tr>
     <th>GPIO B</th>
@@ -155,4 +158,4 @@
   </tr>
 </table>
 
-https://kameleonboard.org/wp-content/uploads/STM32L496ZGT6-Reference-Manual.pdf
+
