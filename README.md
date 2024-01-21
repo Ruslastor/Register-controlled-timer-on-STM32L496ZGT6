@@ -158,4 +158,5 @@
   </tr>
 </table>
 
-
+<h2>TIM6 timer configuration</h2>
+<p>For TIM6 timer we define a prescaler and autoreload registers for timer to act as it will generate signal each 1 millisecond. From manual, we can say, that TIM6 has 4MHz frequency. To make it act like 1kHz timer, we will make a prescaler to be 3 (counter counting from 0 to 3, which is 4 cycles in total), and then set to autoreload register value of 1000, so that the timer will emiit signal, when reaching the value of 1000</p>
