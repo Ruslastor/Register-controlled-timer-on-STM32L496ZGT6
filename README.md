@@ -6,13 +6,13 @@
 <p>From also this circuitry document, we can also see, that segments are connected like:</p>
 <table>
   <tr>
-    <th>Seg_A</th>
-    <th>Seg_B</th>
-    <th>Seg_C</th>
-    <th>Seg_D</th>
-    <th>Seg_E</th>
-    <th>Seg_F</th>
-    <th>Seg_G</th>
+    <th>7S_A</th>
+    <th>7S_B</th>
+    <th>7S_C</th>
+    <th>7S_D</th>
+    <th>7S_E</th>
+    <th>7S_F</th>
+    <th>7S_G</th>
   </tr>
   <tr>
     <td>PG0</td>
@@ -28,10 +28,10 @@
 <p>Cathode connections:</p>
 <table>
   <tr>
-    <th>Dig_1</th>
-    <th>Dig_2</th>
-    <th>Dig_3</th>
-    <th>Dig_4</th>
+    <th>7S_DIG1</th>
+    <th>7S_DIG2</th>
+    <th>7S_DIG3</th>
+    <th>7S_DIG4</th>
   </tr>
   <tr>
     <td>PB2</td>
@@ -41,5 +41,14 @@
   </tr>
 </table>
 
+<p>Button input:</p>
+<table>
+  <tr>
+    <th>JOY_OK</th>
+  </tr>
+  <tr>
+    <td>PE15</td>
+  </tr>
+</table>
 
 https://kameleonboard.org/wp-content/uploads/STM32L496ZGT6-Reference-Manual.pdf
