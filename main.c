@@ -58,8 +58,7 @@ typedef struct MyTimer{
 	MyReg D[3];
 	MyReg TIM6_SR;
 	MyReg TIM6_EGR;
-	MyReg D1[3];
-	MyReg TIM6_CNT;
+	MyReg D1[4];
 	MyReg TIM6_PSC;
 	MyReg TIM6_ARR;
 }MyTimer;
