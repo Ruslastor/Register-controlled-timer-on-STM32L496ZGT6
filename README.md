@@ -74,4 +74,48 @@
     <th>0x40007000</th>
   </tr>
 </table>
+
+<p>The GPIO structure with registers will look like:</p>
+<table>
+  <tr>
+    <th>Register</th>
+    <th>Adress offcet</th>
+  </tr>
+  <tr>
+    <td>MODER</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>OTYPER</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>OSPEEDR</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>PUPDR</td>
+    <td>C</td>
+  </tr>
+  <tr>
+    <td>IDR</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>ODR</td>
+    <td>14</td>
+  </tr>
+  <tr>
+    <td>BSRR</td>
+    <td>18</td>
+  </tr>
+  <tr>
+    <td>DUMMY[3]</td>
+    <td>1C</td>
+  </tr>
+  <tr>
+    <td>BRR</td>
+    <td>2C</td>
+  </tr>
+</table>
 https://kameleonboard.org/wp-content/uploads/STM32L496ZGT6-Reference-Manual.pdf
