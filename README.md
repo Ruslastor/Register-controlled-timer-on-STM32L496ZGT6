@@ -118,4 +118,41 @@
     <td>2C</td>
   </tr>
 </table>
+
+<p>The Timer structure with registers will look like:</p>
+<table>
+  <tr>
+    <th>Register</th>
+    <th>Adress offcet</th>
+  </tr>
+  <tr>
+    <td>TIM6_CR1</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>DUMMY[3]</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <td>TIM6_SR</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>TIM6_EGR</td>
+    <td>14</td>
+  </tr>
+  <tr>
+    <td>DUMMY1[4]</td>
+    <td>18</td>
+  </tr>
+  <tr>
+    <td>TIM6_PSC</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>TIM6_ARR</td>
+    <td>28</td>
+  </tr>
+</table>
+
 https://kameleonboard.org/wp-content/uploads/STM32L496ZGT6-Reference-Manual.pdf
