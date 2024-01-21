@@ -25,5 +25,21 @@
   </tr>
 </table>
 
+<p>Cathode connections:</p>
+<table>
+  <tr>
+    <th>Dig_1</th>
+    <th>Dig_2</th>
+    <th>Dig_3</th>
+    <th>Dig_4</th>
+  </tr>
+  <tr>
+    <td>PB2</td>
+    <td>PB3</td>
+    <td>PB4</td>
+    <td>PB5</td>
+  </tr>
+</table>
+
 
 https://kameleonboard.org/wp-content/uploads/STM32L496ZGT6-Reference-Manual.pdf
