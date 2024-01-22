@@ -170,4 +170,8 @@
   <li>10: Alternate function mode</li>
   <li>11: Analog mode (reset state)</li>
 </ul>
-<p>Also, then we need to power GPIO up, by enabling the clock on it. To do it, the function </p>
+<p>Also, then we need to power GPIO up, by enabling the clock on it. To do it, the function MX_GPIO_Init function is used. To enable the clock for different GPIO, the different clock mask was used. GPIO_init takes this mask as a second argument.</p>
+<h2>Power issues with GPIO_G</h2>
+<p>The GPIO G port, has to have an additional power to be supplied, and it is not enough just to turn the clock on. GPIO G has to have an additional energy supplier to be turned on, and that is managed by the Power structure, and CR2 register, intiVDD() function.</p>
+
+
