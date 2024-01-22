@@ -2,7 +2,7 @@
 
 <p>The aim of this small project was to make a timer, that counts from 0 to 9999, with the use of 4 digit 7-segment display, and not using HAL standard library, but configure GPIO and TIM6 timer by hand, using registers.</p>
 <p>The microcontroller board:</p>
-<img src="images_7s/board.jpg"/>
+<img src="images_7s/board.jpg" alt="Alt Text" width="300"/>
 
 <p>The stucture of display is as follows:</p>
 <img src="images_7s/segment.png"/>
