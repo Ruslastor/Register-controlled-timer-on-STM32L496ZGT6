@@ -173,5 +173,13 @@
 <p>Also, then we need to power GPIO up, by enabling the clock on it. To do it, the function MX_GPIO_Init function is used. To enable the clock for different GPIO, the different clock mask was used. GPIO_init takes this mask as a second argument.</p>
 <h2>Power issues with GPIO_G</h2>
 <p>The GPIO G port, has to have an additional power to be supplied, and it is not enough just to turn the clock on. GPIO G has to have an additional energy supplier to be turned on, and that is managed by the Power structure, and CR2 register, intiVDD() function.</p>
-
-
+<h2>Reading and writing data to GPIO</h2>
+<p>To read the data, we look at the bit mask, corresponding particularly to the desired pin. This is done with the use of IDR reigster if GPIO (digitalRead function). And, to write a pin, the BRR (reset) and BSRR (set) regsters are used.</p>
+<h2>The counter logic</h2>
+<p>The counter works in the way, that int16_t variable counter is being incremented by th mapped value of digitalRead function, that reads the data from Joystick OK button. The value is mapped from range 0 - 1 to be in range -1 - 1. When the counter exedes its range, 9999 sets the counter to be 0, and 0 to be 9999</p>
+<p>As soon as all segments are connected together, the couter shows the digits sequentially, otherwise the value will not be displayed correctly (all the digits will be displayed at the same time). The set_digit function displays a bit mask for segments, taken from DIGITS[][] matrix.</p>
+<h2>Timer configuration constants</h2>
+<ul>
+  <li>SWITCH_PERIOD_MS - defines the timer counting period on milliseconds (1000 - one second)</li>
+  <li>FRAME_PERIOD_MS - defines the period, with which the timer switches between the digits (FPS as an analogy)</li>
+</ul>
