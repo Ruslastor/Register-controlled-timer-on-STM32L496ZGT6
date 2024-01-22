@@ -162,4 +162,12 @@
 <p>For TIM6 timer we define a prescaler and autoreload registers for timer to act as it will generate signal each 1 millisecond. From manual, we can say, that TIM6 has 4MHz frequency. To make it act like 1kHz timer, we will make a prescaler to be 3 (counter counting from 0 to 3, which is 4 cycles in total), and then set to autoreload register value of 1000, so that the timer will emiit signal, when reaching the value of 1000.</p>
 <p>The delay function works in the way, that it uses the empty while loop, till SR register will become 1. Then, the cycle repeats, until the value of required milliseconds is achieved</p>
 <h2>GPIO configuration</h2>
-<p>the GPIOinit() function takes the GPIO port and configures it mode with MODE register (input/output), logic type with OTYPE register (push-pull or open drain), OSPEEDR with</p>
+<p>the GPIOinit() function takes the GPIO port and configures it. It assignes to registers a bit masks, to configure GPIO pin to be INPUT or OUTPUT, PUSH-PULL/OPEN DRAIN logic, etc. and then registers for READING and WRITING data. What bit mask we use for each register type is defined by the datasheet</p>
+<p>For instance, to configure MODER register of GPIO, we use following masks(bits are written by software to configure the I/O mode):</p>
+<ul>
+  <li>00: Input mode</li>
+  <li>01: General purpose output mode</li>
+  <li>10: Alternate function mode</li>
+  <li>11: Analog mode (reset state)</li>
+</ul>
+<p>Also, then we need to power GPIO up, by enabling the clock on it. To do it, the function </p>
